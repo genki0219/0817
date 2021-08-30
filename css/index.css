@@ -678,7 +678,7 @@
 
 }
 
-@media (min-width:400px){
+@media screen and (min-width: 400px) and (max-width: 500px){
   .bottom-header1{
   font-size: 15px;
   background-color: black;
@@ -727,14 +727,17 @@
 
 }
 
-@media (min-width:500px) {
+@media screen and (min-width:500px) and (max-width:768px){
   .bottom-header1{
+  display: flex;
+  justify-content: space-between;
   font-size: 15px;
   background-color: black;
   width: 100%;
 }
 
 .bottom-header p{
+  margin: auto 10%;
   color: #fff;
   width: 150px;
   font-size: 14px;
@@ -777,19 +780,59 @@
 
 }
 
-@media (min-width:768px) {
-  .bottom-header{
-    background-color: black;
-    display: flex;
-  }
-  .bottom-li{
-    /* margin: 0px; */
-    display: flex;
-  }
-  .bottom-headera{
-    margin: 0px;
-  }
-  .bottom-headerb{
-    margin: 0px;
-  }
+
+@media  screen and (min-width: 768px) and (max-width: 1500px) {
+  .bottom-header1{
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  background-color: black;
+  width: 100%;
+}
+
+.bottom-header p{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #fff;
+  width: 150px;
+  padding-left: 50px;
+  font-size: 14px;
+}
+
+.bottom-li{
+  display: flex;
+}
+
+.bottom-headera{
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+.bottom-headerb{
+  margin-right: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+
+.bottom-header li+ li{
+  margin-top: 25px;
+  /* padding-top: 25px; */
+  padding-left: 10px;
+  border-left: 1px solid white;
+}
+
+.bottom-headera:hover{
+  color: gray;
+}
+.bottom-headerb:hover{
+  color: gray;
+}
+
+.bottom-header li {
+  margin-top: 25px;
+}
+
 }
